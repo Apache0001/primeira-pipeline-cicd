@@ -1,0 +1,17 @@
+name: primeira-pipeline # nome da pipeline
+on: # abertura do workflow
+  push: #trigger: gatilho que será utilizado para disparar o workflow
+    branches: ["main"] # branch utilizada 
+  workflow_dispatch: # permite executarmos a pipeline manualmente
+jobs: # jobs -  conjunto de jobs
+  primeiro-job:
+    name: "Meu primeiro job"
+    runs-on: ubuntu-latest # Agente de execução. Executaremos todos os passos seguintes em uma máquina com ubuntu. 
+    steps:
+     - name: "Minha primeira ação"
+       run: echo "Hellow World!"
+     - name: "Segunda ação"
+       run: |
+        echo "Você criou o seu primeiro workflow"
+        echo "Parabéns !!!"
+      
