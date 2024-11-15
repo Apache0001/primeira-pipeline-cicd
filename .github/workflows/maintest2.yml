@@ -9,7 +9,7 @@ jobs: # jobs -  conjunto de jobs
     runs-on: ubuntu-latest # Agente de execução. Executaremos todos os passos seguintes em uma máquina com ubuntu. 
     steps:
      - name: "Minha primeira ação"
-       run: echo "Hellow World!"
+       run: ech "Hellow World!"
      - name: "Segunda ação"
        run: |
         echo "Você criou o seu primeiro workflow"
