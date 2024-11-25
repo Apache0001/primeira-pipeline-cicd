@@ -1,7 +1,7 @@
 name: primeira-pipeline # nome da pipeline
 on: # abertura do workflow
   push: #trigger: gatilho que será utilizado para disparar o workflow
-    branches: ["main"] # branch utilizada 
+    branches: ["homoloh"] # branch utilizada 
   workflow_dispatch: # permite executarmos a pipeline manualmente
 jobs: # jobs -  conjunto de jobs
   primeiro-job:
