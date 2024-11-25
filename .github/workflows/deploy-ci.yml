@@ -23,7 +23,7 @@ jobs:
         file: ./src/Dockerfile
         push: true
         tags: |
-          pabloapache/aula-primeira-pipeline:v${{github.run_number}} ## increment one
+          pabloapache/aula-primeira-pipeline:v${{ github.run_number }}
           pabloapache/aula-primeira-pipeline:latest
     
       
